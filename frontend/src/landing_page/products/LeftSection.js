@@ -1,6 +1,6 @@
 import React from "react";
 
-const LeftSection = ({
+function LeftSection  ({
   imageURL,
   productName,
   productDescription,
@@ -8,12 +8,12 @@ const LeftSection = ({
   learnMore,
   googlePlay,
   appStore,
-}) => {
+}) {
   return (
-    <div className="container">
-      <div className="row p-5">
-        <div className="col-6 p-5">
-          <img src={imageURL} />
+    <div className="container p-5 mt-5">
+      <div className="row">
+        <div className="col-6">
+          <img src={imageURL}/>
         </div>
         
         <div className="col-6 p-5 mt-5">
