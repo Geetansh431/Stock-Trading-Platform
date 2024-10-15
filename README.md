@@ -16,6 +16,27 @@ A fully functional clone of Zerodha, India's largest stock brokerage platform. T
 - **Frontend**: React, Bootstrap, CSS for responsive and dynamic user interfaces.
 - **Backend**: Node.js, Express for robust server-side logic and API handling.
 - **Database**: MongoDB for managing user data and trade history.
+## API Endpoints
+
+### 1. Get All Holdings
+- **Endpoint**: `/allHoldings`
+- **Method**: `GET`
+- **Description**: Retrieves all holdings from the database.
+
+### 2. Get All Positions
+- **Endpoint**: `/allPositions`
+- **Method**: `GET`
+- **Description**: Retrieves all positions from the database.
+
+### 3. Create New Order
+- **Endpoint**: `/newOrder`
+- **Method**: `POST`
+- **Description**: Creates a new order and saves it to the database.
+- **Request Body**:
+  - `name` (String): Name of the stock.
+  - `qty` (Number): Quantity of the stock.
+  - `price` (Number): Price of the stock.
+  - `mode` (String): Mode of the order (e.g., Buy/Sell).
 ## Run Locally
 
 Clone the project
